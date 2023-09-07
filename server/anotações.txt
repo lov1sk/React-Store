@@ -1,0 +1,40 @@
+ Desenvolva uma aplicação para manipulação de produtos, que tenha como principais funcionalidades o CRUD básico e um carrinho para armazenar os produtos que o cliente esteja interessado em comprar. Você poderá escolher as tecnologias utilizadas e o layout/design da aplicação.
+
+Produtos
+Cliente
+Carrinho (que esta relacionado ao cliente e contem produtos) --> O carrinho começa vazio e so esvazia quando o cliente finalizar a compra
+
+
+
+cliente compra um produtos
+antes vemos quantos produtos temos no estoque
+se tiver uma quantidade do produto em estoque, faz a venda, substituindo uma unidade do estoque
+
+model User {
+  id          String @id @default(uuid())  
+  name        String
+  gender      String
+  email       String @unique
+  password    String 
+  address     String
+  requests    Sales[]
+}
+
+model Requests {
+  id            String @id @default(uuid())
+  buyer         User @relation(fields: [buyerId], references: [id])
+  buyerId       String
+  date          Date @default(Date.now())
+  product       Product @relation(fields: [productId], references: [id])
+  productId     String
+}
+
+model Product {
+  id          String @id @default(uuid())
+  name        String
+  category    String
+  description String
+  cover_url   String
+  price       Float
+  Sale        Sales[]
+}

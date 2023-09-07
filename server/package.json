@@ -1,0 +1,24 @@
+{
+  "name": "teste-pratico-processo-seletivo-obc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsx watch src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^8.3.0",
+    "@fastify/jwt": "^7.2.0",
+    "@prisma/client": "^5.0.0",
+    "bcrypt": "^5.1.0",
+    "fastify": "^4.20.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "prisma": "^5.0.0",
+    "tsx": "^3.12.7"
+  }
+}

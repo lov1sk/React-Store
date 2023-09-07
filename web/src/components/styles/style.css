@@ -1,0 +1,54 @@
+.link {
+  color: rgb(39 39 42);
+}
+
+.link:hover {
+  color: rgb(161 161 170);
+}
+
+.link-logout {
+  color: rgb(153 27 27);
+}
+
+.link-logout:hover {
+  color: rgb(220 38 38);
+}
+.button-see-product:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.att-icon {
+  color: rgb(30 64 175);
+}
+
+.del-icon {
+  color: rgb(185 28 28);
+}
+
+.att-icon:hover {
+  color: rgb(2 132 199);
+  cursor: pointer;
+}
+
+.favorite-button {
+  border: 0px;
+  background-color: #fff;
+}
+
+.favorite-button:hover {
+  transform: none;
+  background-color: #fff;
+  cursor: default;
+  color: #000;
+}
+.favorite-button:focus {
+  outline: 0px auto -webkit-focus-ring-color;
+}
+
+.del-icon:hover,
+.favorite-icon:hover {
+  color: rgb(220 38 38);
+  cursor: pointer;
+}
