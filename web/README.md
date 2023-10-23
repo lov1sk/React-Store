@@ -1,27 +1,39 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# React Store - Front End
 
-Currently, two official plugins are available:
+Essa aplicação foi construida com react e vite, aqui nesta pasta encontra-se todos os componentes, paginas, contextos e hooks usados no frontend da aplicação React Store.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Iniciando o projeto
 
-## Expanding the ESLint configuration
+Para iniciar esse projeto, é preciso instalar todas as dependencias que o projeto possui, para isso deve-se executar o script abaixo: 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```bash
+  npm init -y
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+  npm i
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Após instalação das dependencias, é possivel rodar o projeto com:
+```bash
+  npm run dev
+```
+## Estrutura da aplicação
+
+Ao construir essa aplicação, o modelo usado para estruturar arquivos e seguir um padrão foi apostar em um modelo que segrega por pastas arquivos puramente por seu objetivo
+
+| Parâmetro   |  Descrição                |
+| :---------- | :------------------------ |
+| `Components` | `Todos os componentes React utilizados na aplicação estão inseridos aqui` |
+| `Contexts` | `Nesta aplicação foi utilizado apenas um contexto para prover autenticação a toda aplicação` |
+| `Hooks` | `Funcionalidade de realizar requisições GET para o backend` |  
+| `Layout` | `Na aplicação existem 2 principais rotas: Admin e Padrão, aqui estão os layouts para cada rota filha se basear` |  
+| `Lib` | `Configurações de dependecias do Axios e do Supabase (servidor de imagens)` |  
+| `Pages` | `Todas as paginas .TSX estão inseridos aqui` |  
+
+
+## Stack utilizada
+
+**Front-end:** React, React-Router DOM, Typescript
+
+**Demais tecnologias:** Axios, Supabase, Lucide React 
+
