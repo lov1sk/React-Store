@@ -16,12 +16,11 @@ export function AdminCreateProducts() {
     const formData = new FormData(event.currentTarget);
 
     try {
-      console.log(formData.get("product-set"));
       const formPrice = formData.get("product-price");
 
       if (!formPrice) return alert("Price is missing");
 
-      const { data } = await api.post(
+      await api.post(
         "product",
         {
           name: formData.get("product-name"),
@@ -33,7 +32,6 @@ export function AdminCreateProducts() {
         },
         { headers: { Authorization: `Bearer ${token}` } }
       );
-      console.log(data);
       navigate("/admin");
       return alert("created");
     } catch (error) {

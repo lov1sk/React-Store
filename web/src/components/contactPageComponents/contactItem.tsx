@@ -16,6 +16,7 @@ export function ContactComponent({
           boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
           padding: "28px",
           maxWidth: "280px",
+          minHeight: "350px",
           borderRadius: "10px",
           textAlign: "center",
           display: "flex",

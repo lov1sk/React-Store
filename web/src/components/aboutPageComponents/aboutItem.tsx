@@ -19,6 +19,7 @@ export function AboutComponent({
           boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
           padding: "32px",
           margin: "32px 0",
+          maxWidth: "1200px",
           display: "grid",
           gridTemplateColumns: "2fr 6fr",
           gap: "32px",
@@ -35,7 +36,7 @@ export function AboutComponent({
         />
         <div style={{ maxWidth: "500px" }}>
           <h2 style={{ fontWeight: 500, marginBottom: "12px" }}>{title}</h2>
-          <p>{description}</p>
+          <p style={{ color: "#242424" }}>{description}</p>
         </div>
       </div>
     </>

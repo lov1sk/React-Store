@@ -36,19 +36,19 @@ export function ContactPage() {
       >
         <ContactComponent
           title="Ligue para nós"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti obcaecati voluptas eos, quibusdam a necessitatibus nobis dolore dolores natus facere!"
+          description="A qualquer momento e se houver qualquer duvida, ligue para nós que o auxiliaremos o melhor possivel! Telefone: +55 11 99999-9999"
         >
           <PhoneIncoming strokeWidth={1} size={64} />
         </ContactComponent>
         <ContactComponent
           title="Envie um email"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti obcaecati voluptas eos, quibusdam a necessitatibus nobis dolore dolores natus facere!"
+          description="Se preferir, nos envie um email, que o responderemos o mais rapido possivel. Endereço: example@react-store.com"
         >
           <MailCheck strokeWidth={1} size={64} />
         </ContactComponent>
         <ContactComponent
           title="Acompanhe as redes sociais"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti obcaecati voluptas eos, quibusdam a necessitatibus nobis dolore dolores natus facere!"
+          description="Não se esqueça de nos acompanhar em nossos canais no Facebook, Instagram ou twitter."
         >
           <Users2 strokeWidth={1} size={64} />
         </ContactComponent>

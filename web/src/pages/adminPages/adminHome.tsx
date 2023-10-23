@@ -24,6 +24,8 @@ export function AdminHome() {
   //Indicador para o numero de produtos
   const numberOfProducts = data?.length ?? 0;
 
+  const reducedProducts = data?.slice(0, 4) as Product[];
+
   // Indicador para o numero de listas
   const lists = data?.map((list) => list.item_set);
   const notRepetedLists = lists?.filter(
@@ -33,8 +35,6 @@ export function AdminHome() {
 
   const prices = data?.map((item) => item.price);
   const totalBudget = prices?.reduce((total, price) => total + price, 0) ?? 0;
-
-  console.log(totalBudget.toFixed(2));
 
   return (
     <main
@@ -48,6 +48,7 @@ export function AdminHome() {
       <AdminAsideMenu />
       <section>
         <AdminHeader title="Dashboard" />
+        <h1 style={{ fontWeight: 400, margin: " 32px" }}>Indicadores:</h1>
         <section
           style={{
             maxWidth: "80%",
@@ -73,7 +74,12 @@ export function AdminHome() {
             <CircleDollarSign size={24} strokeWidth={1.0} />
           </DashboardIndicator>
         </section>
-        <DashboardTable products={data} />
+        <div>
+          <h1 style={{ fontWeight: 400, margin: " 32px" }}>
+            Ultimos Produtos adicionados
+          </h1>
+          <DashboardTable products={reducedProducts} />
+        </div>
       </section>
     </main>
   );

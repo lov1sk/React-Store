@@ -8,6 +8,7 @@ export function DefaultLayout() {
       style={{
         display: "flex",
         flexDirection: "column",
+        minWidth: "400px",
         maxWidth: "1280px",
         height: "100vh",
         margin: "0 auto",

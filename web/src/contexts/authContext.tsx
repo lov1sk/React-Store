@@ -56,8 +56,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       if (!token || !userCookie) {
         return null;
       }
-
-      console.log("passei do if, portanto tem token");
       // Seta um user no state
       return JSON.parse(userCookie);
     }
@@ -113,8 +111,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     //Salvar nos cookies o token e o user
     Cookie.set("authToken", data.token);
     Cookie.set("authUser", JSON.stringify(data.user));
-    //Redirecionar para a tela de home ou admin home
-    console.log("redirecionando para a pagina home");
   }
 
   async function signOut() {

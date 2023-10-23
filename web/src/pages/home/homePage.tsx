@@ -21,7 +21,6 @@ export function HomePage() {
     return null;
   }
   if (products?.length > qtdProducts) {
-    console.log(qtdProducts);
     return (
       <div>
         <ProductSection

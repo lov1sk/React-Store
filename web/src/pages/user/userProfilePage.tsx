@@ -142,24 +142,22 @@ export function UserProfilePage() {
             <div
               style={{
                 marginTop: "32px",
-                marginLeft: "32px",
                 fontWeight: "500",
               }}
             >
-              <h3 style={{ fontWeight: 400 }}>
-                Não foi feita nenhuma compra{" "}
-                <small>
-                  <Link
-                    to="/app"
-                    style={{
-                      textDecoration: "none",
-                      color: "#121212",
-                    }}
-                  >
-                    clique aqui para ver novos produtos
-                  </Link>
-                </small>
-              </h3>
+              <h3 style={{ fontWeight: 400 }}>Não foi feita nenhuma compra</h3>
+
+              <small style={{ fontWeight: 400 }}>
+                <Link
+                  to="/app"
+                  style={{
+                    textDecoration: "none",
+                    color: "#242424",
+                  }}
+                >
+                  clique aqui para ver novos produtos
+                </Link>
+              </small>
             </div>
           ) : (
             requests?.map((request) => (

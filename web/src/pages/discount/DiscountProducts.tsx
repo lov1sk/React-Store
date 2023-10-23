@@ -17,7 +17,6 @@ export function DiscountProductsPage() {
   const discountProducts = products?.filter(
     (product) => product.item_set == "Produtos obsoletos"
   );
-  console.log(discountProducts);
 
   return (
     <div>

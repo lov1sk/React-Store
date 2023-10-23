@@ -29,7 +29,6 @@ export function AdminUpdateProducts() {
     const formData = new FormData(event.currentTarget);
 
     try {
-      console.log(formData.get("product-set"));
       const formPrice = formData.get("product-price");
 
       if (!formPrice) return alert("Price is missing");
